@@ -79,7 +79,7 @@
             border: solid black;
             top: 160px;
             right: 20%;
-            height: 600px;
+            height: 400px;
             width: 500px;
             position: absolute;
 
@@ -89,7 +89,7 @@
             border: solid black;
             top: 160px;
             left: 20%;
-            height: 600px;
+            height: 400px;
             width: 500px;
             position: absolute;
 
@@ -98,7 +98,7 @@
             background-color: white;
             border: solid black;
             width: 500px;
-            height: 300px;
+            height: 337px;
             top: 223px;
             right: 20%;
             font-size: 18px;
@@ -138,23 +138,45 @@
         .opretAfhentning{
             background-color: white;
             border: solid black;
-            width: 500px;
-            height: 300px;
-            top: 223px;
+            width: 495px;
+            height: 175px;
+            top: 380px;
             left: 20%;
-            font-size: 18px;
+            font-size: 14px;
             position: absolute;
         }
         .opretAfhentningTitel{
+            border: solid black;
             width: 500px;
             height: 50px;
-            top: 170px;
+            top: 160px;
             left: 20%;
             z-index: 1;
             font-size: 32px;
             text-align: center;
             position: absolute;
         }
+        textarea{
+            resize: none;
+        }
+        input{
+            position: absolute;
+            width: 485px;
+            height: 24px;
+            top: 220px;
+            left: 20.3%;
+            z-index: 1;
+        }
+        .aktiveAfhentninger{
+            position: absolute;
+            background-color: black;
+            top: 50%;
+            left: 20%;
+            height: 600px;
+            width: 1000px;
+            z-index: 2;
+        }
+
 
 
     </style>
@@ -168,7 +190,12 @@
 <div class="opretAfhentningTitel">Opret afhentning</div>
 <div class="opretAfhentning">Opret afhentning</div>
 
-<textarea class="opretAfhentning"></textarea>
+<input style="position: absolute;width: 485px;height: 24px;top: 240px;left: 20.3%;z-index: 1;" type="text" placeholder="Indtast titel"/>
+<input style="position: absolute;width: 485px;height: 24px;top: 274px;left: 20.3%;z-index: 1;" type="number" placeholder="Indtast antal"/>
+<input style="position: absolute;width: 485px;height: 24px;top: 308px;left: 20.3%;z-index: 1;" type="number" placeholder="Indtast pris"/>
+<input style="position: absolute;width: 485px;height: 24px;top: 342px;left: 20.3%;z-index: 1;" type="time" placeholder="Indtast antal"/>
+
+<textarea class="opretAfhentning" placeholder="Indtast yderligere information"></textarea>
 
 
 <div class="columnRight"></div>
@@ -176,8 +203,12 @@
 <button><div class="button">Rediger</div></button>
 <div class="userInformation"><br>&nbsp;Brugernavn: NettoGefionsvej3000<br><hr class="solid">&nbsp;Adresse: Gefionsvej 43, 3000 Helsingør<br><hr class="solid">&nbsp;Telefonnummer: 87 78 78 11<br><hr class="solid">&nbsp;Åbningtider: 07-22<br><hr class="solid"></div>
 <div class="sidebarLeft"></div>
-<div class="sidebarLeftText"><br><br><a href="Madspild-Afhentning.html">Afhentning</a><br><br><a href="Madspild-Infomation.html">Mere Info</a><br><br><a href="Madspild-Levering.html">Levering</a></div>
+<div class="sidebarLeftText"><br><hr class="solid"><a href="Madspild-Afhentning.html">Afhentning</a><br><hr class="solid"><a href="Madspild-Infomation.html">Mere Info</a><br><hr class="solid"><a href="Madspild-Levering.html">Levering</a><hr class="solid"></div>
 <div class="sidebarRight"></div>
+<script src="https://www.google.com/maps/place/Netto/@56.0367855,12.5834017,15.18z/data=!4m8!1m2!2m1!1smaps+google!3m4!1s0x465230e2e2ea83d1:0x339d069cdb787c20!8m2!3d56.0401788!4d12.5877717" async></script>
+
+
+
 </body>
 <footer>
     <div class="footer"></div>
