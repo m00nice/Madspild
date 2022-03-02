@@ -6,7 +6,7 @@
     <style>
         .sidebarRight{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             right: 8%;
@@ -14,7 +14,7 @@
         }
         .sidebarLeft{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             left: 8%;
@@ -23,7 +23,7 @@
 
         }
         .sidebarLeftText{
-            width: 150px;
+            width: 200px;
             height: 75%;
             position: fixed;
             left: 8%;
@@ -55,15 +55,6 @@
             top: -10px;
             left: 0;
             z-index: 2;
-        }
-        img{
-            position: absolute;
-            top: 0;
-            width: 150px;
-            height: 150px;
-            left: 8%;
-            z-index: 1;
-            border-radius: 50%;
         }
 
         body{
@@ -166,12 +157,13 @@
 </head>
 
 <h1 class="header">
-    <a href="Madspild-Forsiden.html"><img src="Madspild-Logo.png" alt="LOGO"></a>
+    <a href="Madspild-Forsiden.html"><img style="position: absolute;
+            top: 0; width: 200px; height: 150px; left: 8%; z-index: 1;" src="logoet.jpg" alt="LOGO"></a>
+    <div style="font-size: 40px"><br>Afhentning</div>
 </h1>
 <body>
 <div class="sidebarLeft"></div>
-<div class="sidebarLeftText"><br><br><a href="Madspild-Afhentning.html">Afhentning</a><br><br><a href="Madspild-Infomation.html">Mere Info</a><br><br><a href="Madspild-Levering.html">Levering</a></div>
-<div class="sidebarRight"></div>
+<div class="sidebarLeftText"><br><hr class="solid"><a href="Madspild-Afhentning.html">Køb Mad</a><br><hr class="solid"><a href="Madspild-Levering.html">Opret Mad</a><br><hr class="solid"><a href="Madspild-Infomation.html">Mere Info</a><hr class="solid"></div><div class="sidebarRight"></div>
 <input type="text" value="Indtast postnummer eller bynavn"/>
 <button class="button button1">Søg</button>
 <div class="Levering"></div>

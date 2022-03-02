@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Levering</title>
     <style>
+
         .sidebarRight{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             right: 8%;
@@ -14,7 +15,7 @@
         }
         .sidebarLeft{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             left: 8%;
@@ -23,7 +24,7 @@
 
         }
         .sidebarLeftText{
-            width: 150px;
+            width: 200px;
             height: 75%;
             position: fixed;
             left: 8%;
@@ -55,15 +56,6 @@
             top: -10px;
             left: 0;
             z-index: 1;
-        }
-        img{
-            position: absolute;
-            top: 0;
-            width: 150px;
-            height: 150px;
-            left: 8%;
-            z-index: 1;
-            border-radius: 50%;
         }
         body{
             background: url("iStock-1208790371-2_1591794101-1_1597251187.jpg") no-repeat center center fixed;
@@ -181,6 +173,15 @@
         table, th, td{
             border: 1px solid black;
         }
+        .opretAfhentningButton{
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 56%;
+        left: 41%;
+        z-index: 2;
+        cursor: pointer;
+        }
 
 
 
@@ -188,7 +189,9 @@
 </head>
 
 <h1 class="header">
-    <a href="Madspild-Forsiden.html"><img src="Madspild-Logo.png" alt="LOGO"></a>
+    <a href="Madspild-Forsiden.html"><img style="position: absolute;
+            top: 0; width: 200px; height: 150px; left: 8%; z-index: 1;" src="logoet.jpg" alt="LOGO"></a>
+    <div style="font-size: 40px"><br>Opretning</div>
 </h1>
 <body>
 <div class="columnLeft"></div>
@@ -208,19 +211,19 @@
 <button><div class="button">Rediger</div></button>
 <div class="userInformation"><br>&nbsp;Brugernavn: NettoGefionsvej3000<br><hr class="solid">&nbsp;Adresse: Gefionsvej 43, 3000 Helsingør<br><hr class="solid">&nbsp;Telefonnummer: 87 78 78 11<br><hr class="solid">&nbsp;Åbningtider: 07-22<br><hr class="solid"></div>
 <div class="sidebarLeft"></div>
-<div class="sidebarLeftText"><br><hr class="solid"><a href="Madspild-Afhentning.html">Afhentning</a><br><hr class="solid"><a href="Madspild-Infomation.html">Mere Info</a><br><hr class="solid"><a href="Madspild-Levering.html">Levering</a><hr class="solid"></div>
+<div class="sidebarLeftText"><br><hr class="solid"><a href="Madspild-Afhentning.html">Køb Mad</a><br><hr class="solid"><a href="Madspild-Levering.html">Opret Mad</a><br><hr class="solid"><a href="Madspild-Infomation.html">Mere Info</a><hr class="solid"></div>
 <div class="sidebarRight"></div>
-<script src="https://www.google.com/maps/place/Netto/@56.0367855,12.5834017,15.18z/data=!4m8!1m2!2m1!1smaps+google!3m4!1s0x465230e2e2ea83d1:0x339d069cdb787c20!8m2!3d56.0401788!4d12.5877717" async></script>
 
+<div class="opretAfhentningButton"><button>Opret afhentning</button></div>
 <div class="aktiveAfhentninger"><div style="text-align: center;font-size: 40px">Aktive afhentninger</div> <table style="width: 1120px;">
 <tr></tr>
 <tr>
-    <th>Titel</th>
-    <th>Antal</th>
-    <th>Pris</th>
-    <th>Tidsperiode</th>
-    <th>Reserveret</th>
-
+    <th style="width: 200px">Titel</th>
+    <th style="width: 200px">Antal</th>
+    <th style="width: 200px">Pris</th>
+    <th style="width: 200px">Tidsperiode</th>
+    <th style="width: 200px">Reserveret</th>
+    <th style="width: 100px"></th>
 </tr>
 <tr>
     <td>Pølsehorn</td>
@@ -228,16 +231,80 @@
     <td>5 kr.</td>
     <td>12:12 - 14:00</td>
     <td>12</td>
-    <td><button style="width: 100px">Rediger</button></td>
+    <td><button style="width: 100px;cursor: pointer;">Rediger</button></td>
 </tr>
     <tr>
-        <td>Pølsehorn</td>
-        <td>20</td>
-        <td>5 kr.</td>
-        <td>12:12 - 14:00</td>
-        <td>12</td>
-        <td><button style="width: fit-content">Rediger</button></td>
+        <td>Croissanter</td>
+        <td>13</td>
+        <td>3 kr.</td>
+        <td>12:10 - 14:00</td>
+        <td>11</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
     </tr>
+    <tr>
+        <td>Cookies</td>
+        <td>5</td>
+        <td>5 kr.</td>
+        <td>12:09 - 14:00</td>
+        <td>5</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+    </tr>
+    <tr>
+        <td>Croissanter</td>
+        <td>13</td>
+        <td>3 kr.</td>
+        <td>12:10 - 14:00</td>
+        <td>11</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+    </tr>
+    <tr>
+        <td>Croissanter</td>
+        <td>13</td>
+        <td>3 kr.</td>
+        <td>12:10 - 14:00</td>
+        <td>11</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+    </tr>
+    <tr>
+        <td>Croissanter</td>
+        <td>13</td>
+        <td>3 kr.</td>
+        <td>12:10 - 14:00</td>
+        <td>11</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+    </tr>
+    <tr>
+        <td>Croissanter</td>
+        <td>13</td>
+        <td>3 kr.</td>
+        <td>12:10 - 14:00</td>
+        <td>11</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+    </tr>
+    <tr>
+        <td>Croissanter</td>
+        <td>13</td>
+        <td>3 kr.</td>
+        <td>12:10 - 14:00</td>
+        <td>11</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+    </tr>
+    <tr>
+        <td>Croissanter</td>
+        <td>13</td>
+        <td>3 kr.</td>
+        <td>12:10 - 14:00</td>
+        <td>11</td>
+        <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+    </tr><tr>
+    <td>Croissanter</td>
+    <td>13</td>
+    <td>3 kr.</td>
+    <td>12:10 - 14:00</td>
+    <td>11</td>
+    <td><button style="width: 100px; cursor: pointer;">Rediger</button></td>
+</tr>
+
 </table>
 </div>
 

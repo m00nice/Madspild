@@ -6,7 +6,7 @@
     <style>
         .sidebarRight{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             right: 8%;
@@ -14,7 +14,7 @@
         }
         .sidebarLeft{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             left: 8%;
@@ -23,7 +23,7 @@
 
         }
         .sidebarLeftText{
-            width: 150px;
+            width: 200px;
             height: 75%;
             position: fixed;
             left: 8%;
@@ -56,15 +56,7 @@
             left: 0;
             z-index: 1;
         }
-        img{
-            position: absolute;
-            top: 0;
-            width: 150px;
-            height: 150px;
-            left: 8%;
-            z-index: 1;
-            border-radius: 50%;
-        }
+
         body{
             background: url("iStock-1208790371-2_1591794101-1_1597251187.jpg") no-repeat center center fixed;
             top: 0;
@@ -74,6 +66,28 @@
             -o-background-size: cover;
             background-size: cover;
             }
+        .columnLeft{
+            background-color: white;
+            border: solid black;
+            top: 160px;
+            left: 20%;
+            height: 625px;
+            width: 500px;
+            position: absolute;
+            text-align: left;
+            font-family: Calibri;
+        }
+        .columnRight{
+            background-color: white;
+            border: solid black;
+            top: 160px;
+            right: 20%;
+            height: 625px;
+            width: 500px;
+            position: absolute;
+            text-align: left;
+            font-family: Calibri;
+        }
 
 
 
@@ -85,12 +99,26 @@
 </head>
 
 <h1 class="header">
-    <a href="Madspild-Forsiden.html"><img src="Madspild-Logo.png" alt="LOGO"></a>
+    <a href="Madspild-Forsiden.html"><img style="position: absolute;
+            top: 0; width: 200px; height: 150px; left: 8%; z-index: 1;" src="logoet.jpg" alt="LOGO"></a>
+    <div style="font-size: 40px"><br>Forside</div>
 </h1>
 <body>
 <div class="sidebarLeft"></div>
-<div class="sidebarLeftText"><br><br><a href="Madspild-Afhentning.html">Afhentning</a><br><br><a href="Madspild-Infomation.html">Mere Info</a><br><br><a href="Madspild-Levering.html">Levering</a></div>
-<div class="sidebarRight"></div>
+<div class="sidebarLeftText"><br><hr class="solid"><a href="Madspild-Afhentning.html">Køb Mad</a><br><hr class="solid"><a href="Madspild-Levering.html">Opret Mad</a><br><hr class="solid"><a href="Madspild-Infomation.html">Mere Info</a><hr class="solid"></div><div class="sidebarRight"></div>
+
+<div class="columnLeft"><b style="font-size: 24px">Om Danmark Mod Madspild</b><p>Hver eneste dag året rundt bliver næsten 2.000 ton mad smidt ud i Danmark. Og alt i alt tegner Danmarks samlede madspild sig for 700.000 ton årligt.
+    En række af landets førende virksomheder, Danmarks største forening mod madspild, Stop Spild Af Mad, og organisationen FødevareBanken vil nu gøre op med det. Sammen lancerer de et banebrydende partnerskab, som under overskriften ”Danmark mod Madspild” skal samle danske forbrugere og virksomheder i kampen mod madspild.</p>
+    <b style="font-size: 24px">Om Denne Website</b><p>På denne side kan organisationer og virksomheder registrere deres vare, de har til overs, og sælge dem her på discount. På siden kan du også tilgå disse vare og reservere dem.</p>
+    <img style="border: solid black; height: 310px; width: 495px" src="foodies.jpg"></div>
+
+
+<div class="columnRight"><b style="font-size: 24px">Om Madspild I Danmark</b>
+    <p>Madspildet i den danske servicesektor udgør 227.000-ton pr. år. Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år.</p>
+    <p>Det største madspild i servicesektoren stammer fra detailhandelen, der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.</p>
+    <p>Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.</p>
+    <br><br><img style="border: solid black;" src="diagrammad.png"></div>
+
 </body>
 <footer>
     <div class="footer"></div>

@@ -6,7 +6,7 @@
     <style>
         .sidebarRight{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             right: 8%;
@@ -14,7 +14,7 @@
         }
         .sidebarLeft{
             background: beige;
-            width: 150px;
+            width: 200px;
             height: 100%;
             position: absolute;
             left: 8%;
@@ -23,7 +23,7 @@
 
         }
         .sidebarLeftText{
-            width: 150px;
+            width: 200px;
             height: 75%;
             position: fixed;
             left: 8%;
@@ -56,15 +56,6 @@
             left: 0;
             z-index: 1;
         }
-        img{
-            position: absolute;
-            top: 0;
-            width: 150px;
-            height: 150px;
-            left: 8%;
-            z-index: 1;
-            border-radius: 50%;
-        }
         body{
             background: url("iStock-1208790371-2_1591794101-1_1597251187.jpg") no-repeat center center fixed;
             top: 0;
@@ -73,6 +64,28 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+        }
+        .columnLeft{
+            background-color: white;
+            border: solid black;
+            top: 160px;
+            left: 20%;
+            height: 625px;
+            width: 500px;
+            position: absolute;
+            text-align: left;
+            font-family: Calibri;
+        }
+        .columnRight{
+            background-color: white;
+            border: solid black;
+            top: 160px;
+            right: 20%;
+            height: 625px;
+            width: 500px;
+            position: absolute;
+            text-align: left;
+            font-family: Calibri;
         }
 
 
@@ -85,12 +98,27 @@
 </head>
 
 <h1 class="header">
-    <a href="Madspild-Forsiden.html"><img src="Madspild-Logo.png" alt="LOGO"></a>
+    <a href="Madspild-Forsiden.html"><img style="position: absolute;
+            top: 0; width: 200px; height: 150px; left: 8%; z-index: 1;" src="logoet.jpg" alt="LOGO"></a>
+    <div style="font-size: 40px"><br>Mere Info</div>
 </h1>
 <body>
 <div class="sidebarLeft"></div>
-<div class="sidebarLeftText"><br><br><a href="Madspild-Afhentning.html">Afhentning</a><br><br><a href="Madspild-Infomation.html">Mere Info</a><br><br><a href="Madspild-Levering.html">Levering</a></div>
-<div class="sidebarRight"></div>
+<div class="sidebarLeftText"><br><hr class="solid"><a href="Madspild-Afhentning.html">Køb Mad</a><br><hr class="solid"><a href="Madspild-Levering.html">Opret Mad</a><br><hr class="solid"><a href="Madspild-Infomation.html">Mere Info</a><hr class="solid"></div><div class="sidebarRight"></div>
+
+<div class="columnLeft"><b style="font-size: 24px">Mere information</b><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus dui non urna lacinia, at blandit elit varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla porttitor metus eget dui auctor iaculis sed sed justo. Sed sit amet feugiat turpis. Quisque pulvinar mauris sit amet massa condimentum, ut pellentesque odio mattis. Duis suscipit nulla id rhoncus sagittis. Fusce quis dolor vel quam mollis feugiat pulvinar ut ipsum. Integer ac porta diam. Nullam viverra ipsum maximus maximus laoreet. Suspendisse tincidunt faucibus mauris eget tincidunt. Nam ut mi justo. Pellentesque sed iaculis quam, a volutpat leo. Pellentesque tristique justo quis pulvinar ultrices. Nunc vestibulum porta tellus eu venenatis.
+
+    Nulla facilisi. Nam faucibus leo sit amet dictum vulputate. Donec non turpis est. Pellentesque tempus tellus placerat eros rutrum lacinia. Nam sapien ex, rhoncus varius ligula et, scelerisque molestie ante. Vivamus lobortis malesuada placerat. Sed varius ipsum eu erat laoreet, condimentum consectetur diam iaculis. Vivamus fermentum, lectus ac malesuada efficitur, ligula purus varius nulla, eu efficitur tortor ex sit amet tortor. Maecenas commodo ex et orci hendrerit, sed blandit orci faucibus. Fusce a cursus elit.
+
+    Quisque id arcu nec lectus luctus fermentum vel a diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean convallis ante et ligula fermentum lobortis. Vestibulum tincidunt congue finibus. Morbi aliquam ut urna sit amet accumsan. Duis a enim pulvinar, posuere turpis quis, porttitor mi. Vestibulum congue vitae tellus quis iaculis. Suspendisse ac fringilla libero. Nunc ullamcorper eget turpis a ornare. Sed congue leo sagittis neque mattis volutpat in a erat. Nulla fringilla justo nec hendrerit dictum.</p></div>
+
+<div class="columnRight"><b style="font-size: 24px">Litteraturliste og yderlige links</b><p><a href="https://www.deldinmad.dk/fakta-om-madspild/">www.deldinmad.dk/fakta-om-madspild/</a></p>
+    <p><a href="https://mst.dk/service/publikationer/publikationsarkiv/2014/okt/kortlaegning-af-madaffald-i-servicesektoren/">mst.dk/service/publikationer/publikationsarkiv/2014/okt/kortlaegning-af-madaffald-i-servicesektoren/</a></p>
+    <p><a href="https://sammenmodmadspild.dk/fakta-om-madspild.html">sammenmodmadspild.dk/fakta-om-madspild.html</a></p>
+</div>
+
+
+
 </body>
 <footer>
     <div class="footer"></div>
