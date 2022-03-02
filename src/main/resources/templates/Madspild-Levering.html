@@ -146,10 +146,10 @@
             position: absolute;
         }
         .opretAfhentningTitel{
-            border: solid black;
+            border-bottom: solid black;
             width: 500px;
             height: 50px;
-            top: 160px;
+            top: 170px;
             left: 20%;
             z-index: 1;
             font-size: 32px;
@@ -169,12 +169,17 @@
         }
         .aktiveAfhentninger{
             position: absolute;
-            background-color: black;
-            top: 50%;
+            border: solid black;
+            background-color: white;
+            top: 62%;
             left: 20%;
-            height: 600px;
-            width: 1000px;
-            z-index: 2;
+            height: 300px;
+            width: 1140px;
+            z-index: 1;
+            overflow: scroll;
+        }
+        table, th, td{
+            border: 1px solid black;
         }
 
 
@@ -193,7 +198,7 @@
 <input style="position: absolute;width: 485px;height: 24px;top: 240px;left: 20.3%;z-index: 1;" type="text" placeholder="Indtast titel"/>
 <input style="position: absolute;width: 485px;height: 24px;top: 274px;left: 20.3%;z-index: 1;" type="number" placeholder="Indtast antal"/>
 <input style="position: absolute;width: 485px;height: 24px;top: 308px;left: 20.3%;z-index: 1;" type="number" placeholder="Indtast pris"/>
-<input style="position: absolute;width: 485px;height: 24px;top: 342px;left: 20.3%;z-index: 1;" type="time" placeholder="Indtast antal"/>
+<input style="position: absolute;width: 485px;height: 24px;top: 342px;left: 20.3%;z-index: 1;" type="time" placeholder="Indtast tid"/>
 
 <textarea class="opretAfhentning" placeholder="Indtast yderligere information"></textarea>
 
@@ -207,7 +212,34 @@
 <div class="sidebarRight"></div>
 <script src="https://www.google.com/maps/place/Netto/@56.0367855,12.5834017,15.18z/data=!4m8!1m2!2m1!1smaps+google!3m4!1s0x465230e2e2ea83d1:0x339d069cdb787c20!8m2!3d56.0401788!4d12.5877717" async></script>
 
+<div class="aktiveAfhentninger"><div style="text-align: center;font-size: 40px">Aktive afhentninger</div> <table style="width: 1120px;">
+<tr></tr>
+<tr>
+    <th>Titel</th>
+    <th>Antal</th>
+    <th>Pris</th>
+    <th>Tidsperiode</th>
+    <th>Reserveret</th>
 
+</tr>
+<tr>
+    <td>Pølsehorn</td>
+    <td>20</td>
+    <td>5 kr.</td>
+    <td>12:12 - 14:00</td>
+    <td>12</td>
+    <td><button style="width: 100px">Rediger</button></td>
+</tr>
+    <tr>
+        <td>Pølsehorn</td>
+        <td>20</td>
+        <td>5 kr.</td>
+        <td>12:12 - 14:00</td>
+        <td>12</td>
+        <td><button style="width: fit-content">Rediger</button></td>
+    </tr>
+</table>
+</div>
 
 </body>
 <footer>
