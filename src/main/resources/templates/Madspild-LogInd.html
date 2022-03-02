@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Log ind</title>
+    <title>Levering</title>
     <style>
+
         .sidebarRight{
             background: beige;
             width: 200px;
@@ -65,8 +66,218 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        input{
+            position: absolute;
+            width: 485px;
+            height: 24px;
+            top: 220px;
+            left: 20.3%;
+            z-index: 1;
+        }
+        .columnRight{
+            background-color: white;
+            border: solid black;
+            top: 160px;
+            right: 20%;
+            height: 600px;
+            width: 500px;
+            position: absolute;
+
+        }
+        .columnLeft{
+            background-color: white;
+            border: solid black;
+            top: 160px;
+            left: 20%;
+            height: 360px;
+            width: 500px;
+            position: absolute;
+
+        }
+        .button{
+            display: inline-block;
+            border: solid black;
+            text-decoration: none;
+            top: 400px;
+            left: 23%;
+            z-index: 1;
+            text-align: center;
+            cursor: pointer;
+            padding: 16px 35px;
+            font-size: 16px;
+            margin: 3px 2px;
+            transition-duration: 0.4s;
+            position: absolute;
+
+        }
+        .button:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+        .button1
+        {
+            display: inline-block;
+            border: solid black;
+            text-decoration: none;
+            top: 400px;
+            left: 35%;
+            z-index: 1;
+            text-align: center;
+            cursor: pointer;
+            padding: 16px 35px;
+            font-size: 16px;
+            margin: 3px 2px;
+            transition-duration: 0.4s;
+            position: absolute;
+
+        }
+        .button1:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+        .button2
+        {
+            display: inline-block;
+            border: solid black;
+            text-decoration: none;
+            top: 640px;
+            left: 53%;
+            z-index: 1;
+            text-align: center;
+            cursor: pointer;
+            padding: 16px 35px;
+            font-size: 16px;
+            margin: 3px 2px;
+            transition-duration: 0.4s;
+            position: absolute;
+
+        }
+        .button2:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+        .button3
+        {
+            display: inline-block;
+            border: solid black;
+            text-decoration: none;
+            top: 640px;
+            left: 64%;
+            z-index: 1;
+            text-align: center;
+            cursor: pointer;
+            padding: 16px 35px;
+            font-size: 16px;
+            margin: 3px 2px;
+            transition-duration: 0.4s;
+            position: absolute;
+
+        }
+        .button3:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        .brugerNavn{
+            background-color: white;
+            border: solid black;
+            width: 495px;
+            height: 50px;
+            top: 220px;
+            left: 20%;
+            font-size: 14px;
+            position: absolute;
+        }
+        .passWord{
+            background-color: white;
+            border: solid black;
+            width: 495px;
+            height: 50px;
+            top: 300px;
+            left: 20%;
+            font-size: 14px;
+            position: absolute;
+        }
+        .eksisterendeBruger{
+            border-bottom: solid black;
+            width: 500px;
+            height: 50px;
+            top: 170px;
+            left: 20%;
+            z-index: 1;
+            font-size: 32px;
+            text-align: center;
+            position: absolute;
+        }
 
 
+
+        .brugerOprettelse{
+
+            width: 310px;
+            height: 50px;
+            top: 170px;
+            right: 29%;
+            z-index: 1;
+            font-size: 32px;
+            text-align: center;
+            position: absolute;
+        }
+        .nytBrugernavn{
+            background-color: white;
+            border: solid black;
+            width: 495px;
+            height: 50px;
+            top: 220px;
+            left: 50%;
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+        }
+        .nytPassword{
+            background-color: white;
+            border: solid black;
+            width: 495px;
+            height: 50px;
+            top: 300px;
+            left: 50%;
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+        }
+        .nyAdresse{
+            background-color: white;
+            border: solid black;
+            width: 495px;
+            height: 50px;
+            top: 380px;
+            left: 50%;
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+        }
+        .nytTelefonnr{
+            background-color: white;
+            border: solid black;
+            width: 495px;
+            height: 50px;
+            top: 460px;
+            left: 50%;
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+        }
+        .åbningsTider{
+            background-color: white;
+            border: solid black;
+            width: 495px;
+            height: 50px;
+            top: 540px;
+            left: 50%;
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+        }
 
 
 
@@ -78,11 +289,35 @@
 <h1 class="header">
     <a href="Madspild-Forsiden.html"><img style="position: absolute;
             top: 0; width: 200px; height: 150px; left: 8%; z-index: 1;" src="logoet.jpg" alt="LOGO"></a>
+    <div style="font-size: 40px"><br>Login og signup</div>
 </h1>
 <body>
+<div class="columnLeft"></div>
+<div class="eksisterendeBruger">Login med eksisterende bruger</div>
+
+
+
+<textarea class="brugerNavn" placeholder="Indtast brugernavn"></textarea>
+<textarea class="passWord" placeholder="Indtast password"></textarea>
+<textarea class="nytBrugernavn" placeholder="Indtast ønskede brugernavn"></textarea>
+<textarea class="nytPassword" placeholder="Indtast ønskede password"></textarea>
+<textarea class="nyAdresse" placeholder="Indtast afhentningsafdresse"></textarea>
+<textarea class="nytTelefonnr" placeholder="Indtast telefonnummer"></textarea>
+<textarea class="åbningsTider" placeholder="Indtast åbningtider (xx-xx)"></textarea>
+
+<div class="columnRight"></div>
+<div class="brugerOprettelse">Opret ny bruger</div>
+<button><div class="button">Login</div></button>
+<button><div class="button1">Logout</div></button>
+<button><div class="button2">Opret</div></button>
+<button><div class="button3">Glemt Password</div></button>
 <div class="sidebarLeft"></div>
-<div class="sidebarLeftText"><br><br><a href="Madspild-Afhentning.html">Afhentning</a><br><br><a href="Madspild-Infomation.html">Mere Info</a><br><br><a href="Madspild-Levering.html">Levering</a></div>
+<div class="sidebarLeftText"><br><hr class="solid"><a href="Madspild-LogInd.html">Login</a><br><hr class="solid"><a href="Madspild-Afhentning.html">Køb Mad</a><br><hr class="solid"><a href="Madspild-Levering.html">Opret Mad</a><br><hr class="solid"><a href="Madspild-Infomation.html">Mere Info</a><hr class="solid"></div>
 <div class="sidebarRight"></div>
+
+
+
+
 </body>
 <footer>
     <div class="footer"></div>
